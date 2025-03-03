@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Barack Obama History Quiz</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+    <link href="styles.css" rel="stylesheet" />
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">Barack Obama</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="history.html">History</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="quiz.html">Quiz</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h1 class="text-center mb-5">Barack Obama History Quiz</h1>
+
+        <div id="quiz-container">
+            
+            <div class="question">
+                <p>1. Where was Barack Obama born?</p>
+                <div>
+                    <input type="radio" name="q1" id="q1a1" value="Honolulu, Hawaii"> Honolulu, Hawaii<br>
+                    <input type="radio" name="q1" id="q1a2" value="Chicago, Illinois"> Chicago, Illinois<br>
+                    <input type="radio" name="q1" id="q1a3" value="Los Angeles, California"> Los Angeles, California
+                </div>
+            </div>
+
+            
+            <div class="question">
+                <p>2. Which university did Barack Obama attend?</p>
+                <div>
+                    <input type="radio" name="q2" id="q2a1" value="Harvard University"> Harvard University<br>
+                    <input type="radio" name="q2" id="q2a2" value="Columbia University"> Columbia University<br>
+                    <input type="radio" name="q2" id="q2a3" value="Princeton University"> Princeton University
+                </div>
+            </div>
+
+            
+            <div class="question">
+                <p>3. What major act did Barack Obama sign into law in 2010?</p>
+                <div>
+                    <input type="radio" name="q3" id="q3a1" value="Affordable Care Act"> Affordable Care Act<br>
+                    <input type="radio" name="q3" id="q3a2" value="Civil Rights Act"> Civil Rights Act<br>
+                    <input type="radio" name="q3" id="q3a3" value="Immigration Reform Act"> Immigration Reform Act
+                </div>
+            </div>
+
+            
+            <div class="question">
+                <p>4. Who did Barack Obama order the operation to kill in 2011?</p>
+                <div>
+                    <input type="radio" name="q4" id="q4a1" value="Osama bin Laden"> Osama bin Laden<br>
+                    <input type="radio" name="q4" id="q4a2" value="Saddam Hussein"> Saddam Hussein<br>
+                    <input type="radio" name="q4" id="q4a3" value="Muammar Gaddafi"> Muammar Gaddafi
+                </div>
+            </div>
+
+            
+            <button class="btn btn-primary btn-submit" onclick="checkAnswers()">Submit Quiz</button>
+
+            
+            <div id="result" class="result"></div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

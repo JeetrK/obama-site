@@ -8,4 +8,42 @@ document.getElementById('quoteButton').addEventListener('click', function() {
     document.getElementById('quoteDisplay').textContent = randomQuote;
 });
 
+function checkAnswers() {
+    let score = 0;
+    let totalQuestions = 4;
+
+ 
+    if (document.getElementById('q1a1').checked) {
+        score++;
+    }
+
+ 
+    if (document.getElementById('q2a2').checked) {
+        score++;
+    }
+
+    if (document.getElementById('q3a1').checked) {
+        score++;
+    }
+
+
+    if (document.getElementById('q4a1').checked) {
+        score++;
+    }
+
+
+    let result = document.getElementById('result');
+    result.innerHTML = `You got ${score} out of ${totalQuestions} correct`;
+
+  
+    if (score === totalQuestions) {
+        result.innerHTML += " Incredible Job ";
+    } else if (score >= 2) {
+        result.innerHTML += " Good job ";
+    } else {
+        result.innerHTML += " bad job ";
+    }
+}
+
+
 
